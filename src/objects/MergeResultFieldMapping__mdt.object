@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This metadata maps a field from an object (e.g., Account, Contact) to a field on the Merge Result record that would be created when records are merged in that object</description>
+    <fields>
+        <fullName>FieldName__c</fullName>
+        <description>The full API name (including &quot;__c&quot; for custom fields) of the field under consideration</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The full API name (including &quot;__c&quot; for custom fields) of the field under consideration</inlineHelpText>
+        <label>Field Name</label>
+        <length>40</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ResultFieldEnding__c</fullName>
+        <description>The unique ending (including &quot;__c&quot; for custom fields) of the target Merge Result field in which the value from the involved record should be stored. This is used to derive the appropriate `EffectiveMasterRecord`, `MasterRecord` and `MergedRecord` fields.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The unique ending (including &quot;__c&quot; for custom fields) of the target Merge Result field</inlineHelpText>
+        <label>Result Field Ending</label>
+        <length>40</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SobjectName__c</fullName>
+        <description>The full API name (including &quot;__c&quot; for custom objects) of the object on which the field exists</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The full API name (including &quot;__c&quot; for custom objects) of the object on which the field exists</inlineHelpText>
+        <label>Object Name</label>
+        <length>40</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Merge Result Field Mapping</label>
+    <pluralLabel>Merge Result Field Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

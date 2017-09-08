@@ -1,0 +1,4 @@
+# When text=auto conversion is enabled in a cross-platform project using
+# push and pull to a central repository the text files containing CRLFs
+# should be normalized.
+* text=auto

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>MergeResultFieldMapping__mdt</members>
+        <members>MergeResult__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>MergeResult__c-Merge Result Layout</members>
+        <name>Layout</name>
+    </types>
+    <version>39.0</version>
+</Package>
