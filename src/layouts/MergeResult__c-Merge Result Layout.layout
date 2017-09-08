@@ -11,10 +11,6 @@
                 <field>MergedRecordId__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
-                <field>EffectiveMasterRecordId__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Name</field>
             </layoutItems>
@@ -73,7 +69,6 @@
     </layoutSections>
     <miniLayout>
         <fields>MergedRecordId__c</fields>
-        <fields>EffectiveMasterRecordId__c</fields>
     </miniLayout>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>

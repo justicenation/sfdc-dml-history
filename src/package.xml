@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
+        <members>AccountMergeResultTriggerTest</members>
         <members>MergeResultService</members>
         <members>MergeResultServiceTest</members>
         <members>MergeResultUtil</members>
         <name>ApexClass</name>
+    </types>
+    <types>
+        <members>AccountMergeResultTrigger</members>
+        <name>ApexTrigger</name>
     </types>
     <types>
         <members>MergeResultFieldMapping__mdt.AccountId</members>
