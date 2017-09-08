@@ -13,6 +13,7 @@ global class MergeResultUtil {
 
         // Initialize the result with the bodies of each record
         MergeResult__c result = new MergeResult__c(
+                SobjectName__c = masterRecord.getSObjectType().getDescribe().getName(),
                 MasterRecordBody__c = JSON.serialize(masterRecord),
                 MergedRecordBody__c = JSON.serialize(mergedRecord));
 

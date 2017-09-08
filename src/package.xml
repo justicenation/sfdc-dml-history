@@ -9,6 +9,7 @@
     </types>
     <types>
         <members>AccountMergeResultTrigger</members>
+        <members>MergeResultTrigger</members>
         <name>ApexTrigger</name>
     </types>
     <types>

@@ -11,6 +11,10 @@
                 <field>MergedRecordId__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Required</behavior>
+                <field>SobjectName__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Name</field>
             </layoutItems>
@@ -69,6 +73,7 @@
     </layoutSections>
     <miniLayout>
         <fields>MergedRecordId__c</fields>
+        <fields>SobjectName__c</fields>
     </miniLayout>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>

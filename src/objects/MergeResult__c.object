@@ -146,6 +146,18 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>SobjectName__c</fullName>
+        <description>The full API name (including &quot;__c&quot; for custom objects) of the object on which the field exists</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The full API name (including &quot;__c&quot; for custom objects) of the object on which the field exists</inlineHelpText>
+        <label>Object Name</label>
+        <length>40</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <label>Merge Result</label>
     <nameField>
         <displayFormat>MR-{00000000}</displayFormat>
