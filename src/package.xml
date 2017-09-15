@@ -13,6 +13,10 @@
         <name>ApexTrigger</name>
     </types>
     <types>
+        <members>MergeHistoryClassic</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
         <members>MergeResultFieldMapping.AccountId</members>
         <members>MergeResultFieldMapping.ContactId</members>
         <name>CustomMetadata</name>
@@ -21,6 +25,10 @@
         <members>MergeResultFieldMapping__mdt</members>
         <members>MergeResult__c</members>
         <name>CustomObject</name>
+    </types>
+    <types>
+        <members>MergeResult__c</members>
+        <name>CustomTab</name>
     </types>
     <types>
         <members>MergeResult__c-Merge Result Layout</members>
