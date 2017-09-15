@@ -13,8 +13,8 @@
         <name>ApexTrigger</name>
     </types>
     <types>
-        <members>MergeResultFieldMapping__mdt.AccountId</members>
-        <members>MergeResultFieldMapping__mdt.ContactId</members>
+        <members>MergeResultFieldMapping.AccountId</members>
+        <members>MergeResultFieldMapping.ContactId</members>
         <name>CustomMetadata</name>
     </types>
     <types>
