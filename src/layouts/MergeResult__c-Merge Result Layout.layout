@@ -8,15 +8,7 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>MergedRecordId__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>SobjectName__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Name</field>
+                <field>EffectiveMasterRecordId__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
@@ -27,7 +19,20 @@
                 <field>MasterRecordBody__c</field>
             </layoutItems>
         </layoutColumns>
-        <layoutColumns/>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>SobjectName__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>MergedRecordId__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>MergedRecordBody__c</field>
+            </layoutItems>
+        </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
@@ -60,6 +65,8 @@
     </layoutSections>
     <miniLayout>
         <fields>MergedRecordId__c</fields>
+        <fields>MasterRecordId__c</fields>
+        <fields>EffectiveMasterRecordId__c</fields>
         <fields>SobjectName__c</fields>
     </miniLayout>
     <showEmailCheckbox>false</showEmailCheckbox>
@@ -67,4 +74,10 @@
     <showInteractionLogPanel>false</showInteractionLogPanel>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
+    <summaryLayout>
+        <masterLabel>00hg0000000Z4ST</masterLabel>
+        <sizeX>4</sizeX>
+        <sizeY>0</sizeY>
+        <summaryLayoutStyle>Default</summaryLayoutStyle>
+    </summaryLayout>
 </Layout>
