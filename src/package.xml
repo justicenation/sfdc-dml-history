@@ -5,11 +5,15 @@
         <members>MergeResultService</members>
         <members>MergeResultServiceTest</members>
         <members>MergeResultUtil</members>
+        <members>ContactMergeResultTriggerTest</members>
+        <members>LeadMergeResultTriggerTest</members>
         <name>ApexClass</name>
     </types>
     <types>
         <members>AccountMergeResultTrigger</members>
         <members>MergeResultTrigger</members>
+        <members>LeadMergeResultTrigger</members>
+        <members>ContactMergeResultTrigger</members>
         <name>ApexTrigger</name>
     </types>
     <types>
