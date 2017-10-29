@@ -23,6 +23,7 @@
     <types>
         <members>MergeResultFieldMapping.AccountId</members>
         <members>MergeResultFieldMapping.ContactId</members>
+        <members>MergeResultFieldMapping.LeadId</members>
         <name>CustomMetadata</name>
     </types>
     <types>
