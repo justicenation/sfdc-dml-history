@@ -36,14 +36,12 @@ global class DmlHistoryUtil {
         
         // Transform the data
         String recordsJson = JSON.serializePretty(records);
-        String recordsData =
-                EncodingUtil.base64Encode(Blob.valueOf(recordsJson));
 
         // Return a newly constructed record with the data
         return new ContentVersion(
             PathOnClient = title + JSON_FILE_EXTENSION,
             Title = title,
-            VersionData = Blob.valueOf(recordsData)
+            VersionData = Blob.valueOf(recordsJson)
         );
     }
 }
