@@ -11,7 +11,7 @@
     <description>Use the DML History app</description>
     <fieldPermissions>
         <editable>false</editable>
-        <field>DeleteOperation__c.SobjectName__c</field>
+        <field>DmlOperation__c.SobjectName__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
@@ -22,11 +22,11 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>DeleteOperation__c</object>
+        <object>DmlOperation__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <tabSettings>
-        <tab>DeleteOperation__c</tab>
+        <tab>DmlOperation__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
 </PermissionSet>
