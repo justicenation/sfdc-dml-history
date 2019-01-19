@@ -7,8 +7,10 @@ trigger AccountMergeResultTrigger on Account (after delete) {
     MergeResultService service =
             MergeResultService.getInstance(Account.sobjectType);
 
-    for (Sobject eachAccount : Trigger.old) {
-        results.add(service.getMergeResult(eachAccount));
+    for (Sobject eachRecord : Trigger.old) {
+        if (String.isNotBlank((Id)eachRecord.get('MasterRecordId'))) {
+            results.add(service.getMergeResult(eachRecord));
+        }
     }
 
     // Create the merge results

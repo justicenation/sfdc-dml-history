@@ -8,7 +8,9 @@ trigger ContactMergeResultTrigger on Contact (after delete) {
             MergeResultService.getInstance(Contact.sobjectType);
 
     for (Sobject eachRecord : Trigger.old) {
-        results.add(service.getMergeResult(eachRecord));
+        if (String.isNotBlank((Id)eachRecord.get('MasterRecordId'))) {
+            results.add(service.getMergeResult(eachRecord));
+        }
     }
 
     // Create the merge results
