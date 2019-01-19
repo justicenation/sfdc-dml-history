@@ -3,8 +3,8 @@
     <defaultLandingTab>MergeResult__c</defaultLandingTab>
     <description>Review merge history for accounts, contacts and leads</description>
     <label>Merge History</label>
-    <tab>MergeResult__c</tab>
-    <tab>standard-Account</tab>
-    <tab>standard-Contact</tab>
-    <tab>standard-Lead</tab>
+    <tabs>MergeResult__c</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>standard-Lead</tabs>
 </CustomApplication>

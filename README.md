@@ -6,9 +6,14 @@ to manually undo accidental merges.
 
 ## Installation
 
-Zip up the **src** directory and deploy with [Workbench][1] or your favorite IDE.
+Use the [Salesforce DX CLI][1] to deploy the code to your Salesforce org.
 
-[1]: https://workbench.developerforce.com
+```bash
+sfdx force:source:convert -r force-app -d src
+sfdx force:mdapi:deploy -d src -w 5
+```
+
+[1]: https://developer.salesforce.com/tools/sfdxcli
 
 ## Quick Start
 
