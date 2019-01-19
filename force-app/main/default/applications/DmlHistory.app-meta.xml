@@ -10,12 +10,12 @@
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <label>DML History</label>
     <navType>Console</navType>
-    <tabs>DeleteOperation__c</tabs>
+    <tabs>DmlOperation__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>DML_History_UtilityBar</utilityBar>
     <workspaceConfig>
         <mappings>
-            <tab>DeleteOperation__c</tab>
+            <tab>DmlOperation__c</tab>
         </mappings>
     </workspaceConfig>
 </CustomApplication>
