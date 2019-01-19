@@ -3,3 +3,10 @@
 #
 
 package.xml
+
+# Workaround for error below running force:source:pull with API 44.0
+#
+#   ERROR:  Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:AppMenu and file name:AppSwitcher.
+#
+# More information: https://success.salesforce.com/0D53A00003tDrTs
+AppSwitcher.appMenu
