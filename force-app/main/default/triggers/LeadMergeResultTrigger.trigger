@@ -8,7 +8,9 @@ trigger LeadMergeResultTrigger on Lead (after delete) {
             MergeResultService.getInstance(Lead.sobjectType);
 
     for (Sobject eachRecord : Trigger.old) {
-        results.add(service.getMergeResult(eachRecord));
+        if (String.isNotBlank((Id)eachRecord.get('MasterRecordId'))) {
+            results.add(service.getMergeResult(eachRecord));
+        }
     }
 
     // Create the merge results

@@ -43,23 +43,39 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>Records for delete DML operations for objects where tracking is enabled</description>
+    <description>Records of DML operations for objects where tracking is enabled</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>false</enableBulkApi>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>
-    <enableSearch>true</enableSearch>
+    <enableSearch>false</enableSearch>
     <enableSharing>false</enableSharing>
     <enableStreamingApi>false</enableStreamingApi>
-    <label>Delete Operation</label>
+    <label>DML Operation</label>
     <nameField>
         <displayFormat>DO-{00000000}</displayFormat>
-        <label>Delete Operation Number</label>
+        <label>DML Operation Number</label>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Delete Operations</pluralLabel>
-    <searchLayouts/>
+    <pluralLabel>DML Operations</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SobjectName__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>NumberOfRecords__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATEDBY_USER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SobjectName__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>NumberOfRecords__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CREATEDBY_USER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CREATED_DATE</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SobjectName__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>NumberOfRecords__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATEDBY_USER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

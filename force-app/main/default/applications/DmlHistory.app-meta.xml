@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Review history of tracked DML operations</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>DML History</label>
+    <navType>Console</navType>
+    <tabs>DmlOperation__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>DML_History_UtilityBar</utilityBar>
+    <workspaceConfig>
+        <mappings>
+            <tab>DmlOperation__c</tab>
+        </mappings>
+    </workspaceConfig>
+</CustomApplication>

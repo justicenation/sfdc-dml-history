@@ -15,7 +15,7 @@ sfdx force:mdapi:deploy -d src -w 5
 
 [1]: https://developer.salesforce.com/tools/sfdxcli
 
-## Quick Start
+## Merge History Quick Start
 
 Merge History captures history using **Merge Result** records. Every result
 may have sets of fields that follow the same convention as the included
@@ -50,3 +50,47 @@ Result Field Ending | NetsuiteId__c
 
 Remember to grant at least **Read** permission on all fields
 on the Merge Result object to the System Administrator profile!
+
+## DML History Quick Start
+
+DML History currently only supports tracking delete operations.
+
+To track delete operations any object that supports Apex triggers,
+create a standalone  Apex trigger like the following.
+
+```java
+trigger AccountDeleteTrigger on Account (after delete) {
+    DmlHistoryService.getInstance().trackDelete(Trigger.old);
+}
+```
+
+To provide code coverage for this simple trigger, create the following class.
+
+```java
+@isTest
+private class AccountDeleteTriggerTest {
+
+    @isTest
+    private static void deleteRecord() {
+
+        // Given
+        insert new Account(
+            Name = 'Acme, Inc. (TEST)'
+        );
+        
+        // When
+        Test.startTest();
+
+        delete [SELECT Id FROM Account WHERE Name = 'Acme, Inc. (TEST)'];
+
+        // Then
+        Test.stopTest();
+
+        System.assertNotEquals(
+            null,
+            [SELECT Id FROM DmlOperation__c WHERE Type__c = 'delete'].Id,
+            'ID should prove Delete Operation record exists'
+        );
+    }
+}
+```
