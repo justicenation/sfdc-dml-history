@@ -88,7 +88,7 @@ private class AccountDeleteTriggerTest {
 
         System.assertNotEquals(
             null,
-            [SELECT Id FROM DeleteOperation__c].Id,
+            [SELECT Id FROM DmlOperation__c WHERE Type__c = 'delete'].Id,
             'ID should prove Delete Operation record exists'
         );
     }

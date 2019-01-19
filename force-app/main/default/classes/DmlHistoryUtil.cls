@@ -2,6 +2,8 @@ global class DmlHistoryUtil {
 
     global static final String DELETE_OPERATION_TITLE = 'delete';
 
+    global static final String DELETE_TYPE = 'delete';
+
     global static final String INFERRED_PERMISSION_SHARE_TYPE = 'I';
 
     global static final String JSON_FILE_EXTENSION = '.json';

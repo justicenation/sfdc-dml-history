@@ -12,7 +12,8 @@ global class DmlHistoryService {
 
         // Initialize the Delete Operation record
         DmlOperation__c op = new DmlOperation__c(
-            SobjectName__c = DmlHistoryUtil.getSobjectName(records)
+            SobjectName__c = DmlHistoryUtil.getSobjectName(records),
+            Type__c = DmlHistoryUtil.DELETE_TYPE
         );
 
         // Create the record and remember the ID
