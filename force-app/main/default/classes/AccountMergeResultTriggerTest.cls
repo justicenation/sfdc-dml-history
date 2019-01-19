@@ -1,6 +1,35 @@
 @isTest
 private class AccountMergeResultTriggerTest {
 
+    /**
+     * Confirm we can still delete an account without creating merge history
+     */
+    @isTest
+    private static void deleteAccount() {
+
+        // Given
+        Account acme = [
+            SELECT Id
+            FROM Account
+            WHERE Name = 'Acme Corporation (TEST)'
+        ];
+
+        // When
+        Test.startTest();
+
+        delete acme;
+
+        // Then
+        Test.stopTest();
+
+        List<MergeResult__c> results = [
+            SELECT Id
+            FROM MergeResult__c
+        ];
+
+        System.assertEquals(0, results.size(), 'no merge history expected');
+    }
+
     @isTest
     private static void mergeAccounts() {
 
