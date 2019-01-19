@@ -4,6 +4,10 @@ global class DmlHistoryUtil {
 
     global static final String INFERRED_PERMISSION_SHARE_TYPE = 'I';
 
+    global static final String JSON_FILE_EXTENSION = '.json';
+
+    global static final String JSON_FILE_TYPE = 'application/json';
+
     global static String getSobjectName(SObject record) {
         return record.getSObjectType().getDescribe().getName();
     }
@@ -35,7 +39,7 @@ global class DmlHistoryUtil {
 
         // Return a newly constructed record with the data
         return new ContentVersion(
-            PathOnClient = title,
+            PathOnClient = title + JSON_FILE_EXTENSION,
             Title = title,
             VersionData = Blob.valueOf(recordsData)
         );
