@@ -1,8 +1,10 @@
-# Salesforce Merge History
+# Salesforce DML History
 
 Capture merge history for accounts, contacts and leads, enabling easy lookups
 across multiple merge operations while also providing a means
 to manually undo accidental merges.
+
+Also capture simple DML history, notably for `delete` operations.
 
 ## Installation
 
