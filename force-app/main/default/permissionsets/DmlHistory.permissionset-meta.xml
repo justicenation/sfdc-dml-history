@@ -8,6 +8,14 @@
         <application>DmlHistoryClassic</application>
         <visible>true</visible>
     </applicationVisibilities>
+    <applicationVisibilities>
+        <application>MergeHistory</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>MergeHistoryClassic</application>
+        <visible>true</visible>
+    </applicationVisibilities>
     <description>Use the DML History app</description>
     <fieldPermissions>
         <editable>false</editable>
