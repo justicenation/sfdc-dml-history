@@ -8,6 +8,14 @@
         <application>DmlHistoryClassic</application>
         <visible>true</visible>
     </applicationVisibilities>
+    <applicationVisibilities>
+        <application>MergeHistory</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>MergeHistoryClassic</application>
+        <visible>true</visible>
+    </applicationVisibilities>
     <description>Use the DML History app</description>
     <fieldPermissions>
         <editable>false</editable>
@@ -24,6 +32,36 @@
         <field>DmlOperation__c.Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MergeResult__c.EffectiveMasterRecordId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MergeResult__c.EffectiveMasterRecordNetsuiteId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MergeResult__c.MasterRecordBody__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MergeResult__c.MasterRecordNetsuiteId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MergeResult__c.MergedRecordBody__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>MergeResult__c.MergedRecordNetsuiteId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>DML History</label>
     <objectPermissions>
@@ -35,8 +73,21 @@
         <object>DmlOperation__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>MergeResult__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
     <tabSettings>
         <tab>DmlOperation__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>MergeResult__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
 </PermissionSet>

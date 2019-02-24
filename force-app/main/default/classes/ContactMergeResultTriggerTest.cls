@@ -17,6 +17,11 @@ private class ContactMergeResultTriggerTest {
             WHERE LastName = 'Duck (TEST)'
         ];
 
+        insert new MergeResultTrigger__c(
+            IsActive__c = true,
+            Name = Schema.SObjectType.Contact.name
+        );
+
         // When
         Test.startTest();
 
@@ -61,6 +66,11 @@ private class ContactMergeResultTriggerTest {
             FROM Contact
             WHERE LastName = 'Fudd (TEST)'
         ];
+
+        insert new MergeResultTrigger__c(
+            IsActive__c = true,
+            Name = Schema.SObjectType.Contact.name
+        );
 
         // When
         Test.startTest();
