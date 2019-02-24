@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Type__c</fullName>
+    <fullName>DmlOperationType__c</fullName>
+    <description>The Type value from the parent DML Operation record</description>
     <externalId>false</externalId>
-    <label>Type</label>
+    <inlineHelpText>The Type value from the parent DML Operation record</inlineHelpText>
+    <label>DML Operation Type</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
