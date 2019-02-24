@@ -106,6 +106,16 @@ private class AccountDeleteTriggerTest {
 }
 ```
 
+To track delete operations with the additional granularity of the record IDs
+for every single deleted record logged separately, use the overloaded
+`trackDelete` method as follows.
+
+```java
+trigger OpportunityLineItemDeleteTrigger on OpportunityLineItem (after delete) {
+    DmlHistoryService.getInstance().trackDelete(Trigger.old, true);
+}
+```
+
 ## Development
 
 ```bash
