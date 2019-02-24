@@ -9,7 +9,7 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>RecordId__c</field>
+                <field>SubjectId__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
