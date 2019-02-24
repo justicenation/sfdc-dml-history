@@ -148,4 +148,39 @@ private class AccountMergeResultTriggerTest {
 
         insert new List<Account> { acme, dc, marvel };
     }
+
+    @isTest
+    private static void mergeAccountsWithoutTracking() {
+
+        // Given
+        Account acme = [
+            SELECT Id
+            FROM Account
+            WHERE Name = 'Acme Corporation (TEST)'
+        ];
+
+        Account marvel = [
+            SELECT Id
+            FROM Account
+            WHERE Name = 'Marvel Universe (TEST)'
+        ];
+
+        // When
+        Test.startTest();
+
+        merge acme marvel;
+
+        // Then
+        Test.stopTest();
+
+        List<MergeResult__c> results = [
+            SELECT Id,
+                EffectiveMasterRecordId__c,
+                MasterRecordId__c, MergedRecordId__c
+            FROM MergeResult__c
+            WHERE MergedRecordId__c = :marvel.Id
+        ];
+
+        System.assertEquals(0, results.size(), 'no merge results expected');
+    }
 }
