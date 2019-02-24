@@ -19,6 +19,15 @@ sfdx force:mdapi:deploy -d src -w 5
 
 ## Merge History Quick Start
 
+To enable merge history tracking for an object, open
+the **Merge History Trigger** custom setting and create a new record for
+every object where tracking is enabled.
+
+Field Label | Description
+----------- | -----------
+Name | The API name of the object. Currently only "Account", "Contact" and "Lead" are supported.
+Active | Whether merge history tracking is active for this object
+
 Merge History captures history using **Merge Result** records. Every result
 may have sets of fields that follow the same convention as the included
 sample set.
