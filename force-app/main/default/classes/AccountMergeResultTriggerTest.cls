@@ -46,6 +46,11 @@ private class AccountMergeResultTriggerTest {
             WHERE Name = 'Marvel Universe (TEST)'
         ];
 
+        insert new MergeResultTrigger__c(
+            IsActive__c = true,
+            Name = Schema.SObjectType.Account.name
+        );
+
         // When
         Test.startTest();
 
@@ -90,6 +95,11 @@ private class AccountMergeResultTriggerTest {
             FROM Account
             WHERE Name = 'Marvel Universe (TEST)'
         ];
+
+        insert new MergeResultTrigger__c(
+            IsActive__c = true,
+            Name = Schema.SObjectType.Account.name
+        );
 
         // When
         Test.startTest();

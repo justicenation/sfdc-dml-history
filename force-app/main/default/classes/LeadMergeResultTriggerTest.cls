@@ -17,6 +17,11 @@ private class LeadMergeResultTriggerTest {
             WHERE LastName = 'Duck (TEST)'
         ];
 
+        insert new MergeResultTrigger__c(
+            IsActive__c = true,
+            Name = Schema.SObjectType.Lead.name
+        );
+
         // When
         Test.startTest();
 
@@ -61,6 +66,11 @@ private class LeadMergeResultTriggerTest {
             FROM Lead
             WHERE LastName = 'Fudd (TEST)'
         ];
+
+        insert new MergeResultTrigger__c(
+            IsActive__c = true,
+            Name = Schema.SObjectType.Lead.name
+        );
 
         // When
         Test.startTest();
