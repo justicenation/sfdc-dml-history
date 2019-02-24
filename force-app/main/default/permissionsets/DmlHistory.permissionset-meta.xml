@@ -18,6 +18,16 @@
     </applicationVisibilities>
     <description>Use the DML History app</description>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>DmlOperationSubject__c.DmlOperationType__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>DmlOperationSubject__c.SobjectName__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>DmlOperation__c.NumberOfRecords__c</field>
         <readable>true</readable>
@@ -64,6 +74,15 @@
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>DML History</label>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>DmlOperationSubject__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
     <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>true</allowDelete>

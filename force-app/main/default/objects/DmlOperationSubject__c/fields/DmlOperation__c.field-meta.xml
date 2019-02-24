@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DmlOperation__c</fullName>
+    <description>The DML operation which operated on this subject</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The DML operation which operated on this subject</inlineHelpText>
+    <label>DML Operation</label>
+    <referenceTo>DmlOperation__c</referenceTo>
+    <relationshipLabel>DML Operation Subjects</relationshipLabel>
+    <relationshipName>DmlOperationSubjects</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>
