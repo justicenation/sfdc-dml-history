@@ -81,8 +81,8 @@ global class DmlHistoryService {
                 new DmlOperationSubject__c(
                     DmlOperation__c = op.Id,
                     DmlOperationType__c = op.Type__c,
-                    RecordId__c = eachRecord.Id,
-                    SobjectName__c = op.SobjectName__c
+                    SobjectName__c = op.SobjectName__c,
+                    SubjectId__c = eachRecord.Id
                 )
             );
         }
