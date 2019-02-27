@@ -71,7 +71,7 @@ create a standalone  Apex trigger like the following.
 
 ```java
 trigger AccountDeleteTrigger on Account (after delete) {
-    DmlHistoryService.getInstance().trackDelete(Trigger.old);
+    Uatu.DmlHistoryService.getInstance().trackDelete(Trigger.old);
 }
 ```
 
@@ -99,7 +99,11 @@ private class AccountDeleteTriggerTest {
 
         System.assertNotEquals(
             null,
-            [SELECT Id FROM DmlOperation__c WHERE Type__c = 'delete'].Id,
+            [
+                SELECT Id
+                FROM Uatu__DmlOperation__c
+                WHERE Uatu__Type__c = 'delete'
+            ].Id,
             'ID should prove Delete Operation record exists'
         );
     }
@@ -112,7 +116,7 @@ for every single deleted record logged separately, use the overloaded
 
 ```java
 trigger OpportunityLineItemDeleteTrigger on OpportunityLineItem (after delete) {
-    DmlHistoryService.getInstance().trackDelete(Trigger.old, true);
+    Uatu.DmlHistoryService.getInstance().trackDelete(Trigger.old, true);
 }
 ```
 
