@@ -4,4 +4,8 @@
     <description>Review history of tracked DML operations</description>
     <label>DML History</label>
     <tabs>DmlOperation__c</tabs>
+    <tabs>MergeResult__c</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>standard-Lead</tabs>
 </CustomApplication>
