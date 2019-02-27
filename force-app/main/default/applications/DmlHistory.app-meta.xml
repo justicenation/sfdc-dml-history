@@ -11,11 +11,28 @@
     <label>DML History</label>
     <navType>Console</navType>
     <tabs>DmlOperation__c</tabs>
+    <tabs>MergeResult__c</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>standard-Lead</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>DML_History_UtilityBar</utilityBar>
     <workspaceConfig>
         <mappings>
             <tab>DmlOperation__c</tab>
+        </mappings>
+        <mappings>
+            <tab>MergeResult__c</tab>
+        </mappings>
+        <mappings>
+            <tab>standard-Account</tab>
+        </mappings>
+        <mappings>
+            <fieldName>AccountId</fieldName>
+            <tab>standard-Contact</tab>
+        </mappings>
+        <mappings>
+            <tab>standard-Lead</tab>
         </mappings>
     </workspaceConfig>
 </CustomApplication>
