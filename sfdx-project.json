@@ -2,7 +2,8 @@
   "packageDirectories": [
     {
       "path": "force-app",
-      "default": true
+      "default": true,
+      "package": "0Ho2E000000KyncSAC"
     }
   ],
   "namespace": "Uatu",
