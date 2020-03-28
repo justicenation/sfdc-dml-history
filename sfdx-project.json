@@ -1,12 +1,15 @@
 {
-  "packageDirectories": [
-    {
-      "path": "force-app",
-      "default": true,
-      "package": "0Ho2E000000KyncSAC"
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "default": true,
+            "package": "0Ho2E000000KyncSAC"
+        }
+    ],
+    "namespace": "Uatu",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "44.0",
+    "packageAliases": {
+        "DML History@0.1.0-2": "04t2E000003SPV2QAO"
     }
-  ],
-  "namespace": "Uatu",
-  "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "44.0"
 }
