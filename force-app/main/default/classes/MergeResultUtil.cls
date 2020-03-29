@@ -1,4 +1,4 @@
-global class MergeResultUtil {
+global with sharing class MergeResultUtil {
 
     global static final String EFFECTIVE_MASTER_RECORD_PREFIX =
             'EffectiveMasterRecord';

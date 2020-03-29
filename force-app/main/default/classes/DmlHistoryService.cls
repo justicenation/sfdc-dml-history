@@ -1,4 +1,4 @@
-global class DmlHistoryService {
+global with sharing class DmlHistoryService {
 
     global DmlHistoryService() {
         /* Nothin' to see here */

@@ -1,4 +1,4 @@
-global class DmlHistoryUtil {
+global with sharing class DmlHistoryUtil {
 
     global static final String DELETE_OPERATION_TITLE = 'delete';
 
