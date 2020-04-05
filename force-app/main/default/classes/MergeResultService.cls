@@ -32,8 +32,14 @@ global with sharing class MergeResultService {
     }
 
     global String getMasterRecordQuery(List<String> fieldNames) {
+
+        // Escape the field names to avoid SOQL injection
+        String joinedFieldNames = String.escapeSingleQuotes(
+            String.join(fieldNames, ', ')
+        );
+
         List<String> queryParts = new List<String> {
-            'SELECT ' + String.join(fieldNames, ', '),
+            'SELECT ' + joinedFieldNames,
             'FROM ' + this.objectName,
             'WHERE Id = :recordId'
         };
