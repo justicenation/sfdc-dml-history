@@ -6,7 +6,9 @@ global with sharing class MergeResultService {
     private String objectName;
 
     global MergeResultService(String objectName) {
-        this.objectName = objectName;
+
+        // Escape object name parameter to avoid SOQL injection
+        this.objectName = String.escapeSingleQuotes(objectName);
     }
 
     global List<MergeResultFieldMapping__mdt> getFieldMappings() {
